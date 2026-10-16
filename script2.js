@@ -87,12 +87,12 @@ else{
     console.log("bilgiler hatalı")    
 }
 
-const a = 24;
-const b = 37;
-if(a>b){
+const ş = 24;
+const i = 37;
+if(ş>i){
     console.log("a")
 }
-else if(b>a){
+else if(i>ş){
 console.log("b")
 }
 else{
@@ -156,7 +156,7 @@ console.log(orderTotal+50)
  console.log("erişim iznin yok")   
  }
 
- const c =10;
+ const p =10;
  const d =5;
  const operator="-";
 
@@ -165,13 +165,13 @@ if(operator==="*"){
     console.log(c*d)
 }
 else if (operator === "-") {
-    console.log(c - d);
+    console.log(p - d);
 }
 else if (operator==="+"){
-    console.log(c+d)
+    console.log(p+d)
 }
 else if (operator==="/"){
-    console.log(c/d)
+    console.log(p/d)
 }
 else{
     console.log("geçersiz işlem")
@@ -250,9 +250,160 @@ else if(age3>=65){
 else if(isStudent===true){
     console.log(Normal_ticket-(Normal_ticket*20/100))
 }
-// else if(age3<12 && isStudent===true){
-//     console.log(Normal_ticket-(Normal_ticket*50/100))
-// }
+
 else {
     console.log(Normal_ticket);
 }
+
+
+
+console.log ("panelden ödev burdan başlıyor" )
+
+
+
+
+
+const batteryLevel =25;
+const  ischarging =false;
+
+if(batteryLevel<20 && ischarging===false){
+    console.log("düşük pil!,lütfen şarja takın")
+}
+else{
+    console.log("pil durumu iyi")
+}
+
+
+
+
+
+const dividend = 45;
+const divisor = 9;
+
+if(divisor===0){
+    console.log("tanımsız")
+}
+else if(dividend / divisor===5){
+    console.log("tam bölünüyor")
+}
+
+else{
+    console.log("kalanlı bölme")
+}
+
+
+
+
+const maxWeight = 400;
+const personCount = 5;
+const  averageWeight = 85;
+
+if(personCount*averageWeight>maxWeight){
+    console.log("kapasite aşıldı! asansör hareket edemez ")
+}
+
+else{
+    console.log("iyi yolculuklar")
+}
+
+
+
+const username5 = "alill";
+
+if(username5.length >=4 && username5.length <=12){
+    console.log("KULLANICI ADI KABUL EDİLDİ")
+}
+
+else{
+    console.log("geçersiz kullanıcı adı uzunluğu ")
+}
+
+
+
+
+const hour = 22;
+
+if (hour >= 20 || hour < 6) {
+    console.log("Gece modu aktif.");
+}
+else {
+    console.log("Gündüz modu aktif.");
+}
+
+
+
+const waterTemp = 105;
+
+if (waterTemp <= 0) {
+    console.log("Katı (Buz)");
+}
+else if (waterTemp > 0 && waterTemp < 100) {
+    console.log("Sıvı (Su)");
+}
+
+else{
+    console.log("Gaz (Buhar)")
+}
+
+if(waterTemp===0 || waterTemp===100){
+    console.log("Hal değişim noktası!")
+}
+
+
+
+const speed = 115;
+const speedLimit = 90;
+
+const difference = speed - speedLimit;
+
+if (difference <= 0) {
+    console.log("İyi sürüşler.");
+}
+else if (difference > 0 && difference <= 20) {
+    console.log("Uyarı: Hız sınırını aştınız.");
+}
+
+else if (difference > 20 && difference <=40) {
+    console.log("1000 tl ceza");
+}
+else{
+    console.log("ehliyetine el konuldu")
+}
+
+
+
+const coffeeType = "Latte";
+const hasMilk = false;
+const hasWater = true;
+
+if (hasWater === false) {
+    console.log("Su bitti!");
+}
+else if (
+    (coffeeType === "Latte" || coffeeType === "Cappuccino") && !hasMilk
+) {
+    console.log("Süt bitti, bu kahve yapılamaz.");
+}
+else {
+    console.log("Kahveniz hazırlanıyor...");
+}
+
+
+
+
+
+const a = 1;
+const  b = -4;
+const c = 4 ;
+const delta = (b*b)-(4*a*c)
+
+if(delta>0){
+    console.log("iki farklı gerçek kök var.")
+}
+else if(delta===0){
+    console.log("çakışık tek kök var.")
+}
+else{
+    console.log("gerçek kök yok")
+}
+
