@@ -407,3 +407,118 @@ else{
     console.log("gerçek kök yok")
 }
 
+
+ 
+
+const currentPlan = "Standart";
+const storageUsed = 95;
+const maxStorage = 100;
+
+if (storageUsed > maxStorage) {
+    console.log("Alan doldu! Acil yükseltme gerekli.");
+}
+else if (storageUsed >= maxStorage * 90 / 100) {
+    console.log("Alan neredeyse doldu.");
+}
+else {
+    console.log("Yeterli depolama alanınız var.");
+}
+
+
+
+
+
+const x = -4;
+const y = 7;
+
+if (x === 0 && y === 0) {
+    console.log("Orijin (Başlangıç noktası)");
+}
+else if (x === 0 || y === 0) {
+    console.log("Eksen üzerinde");
+}
+else if (x > 0 && y > 0) {
+    console.log("1. Bölge ++");
+}
+else if (x < 0 && y > 0) {
+    console.log("2. Bölge -+");
+}
+else if (x < 0 && y < 0) {
+    console.log("3. Bölge -- ");
+}
+else if (x > 0 && y < 0) {
+    console.log("4. Bölge +-");
+}
+
+
+
+const consumption = 320;
+
+if (consumption <= 150) {
+    console.log(consumption * 2);
+}
+else {
+    console.log((150 * 2) + ((consumption - 150) * 3));
+}
+
+
+
+
+
+const hours = 5;
+const isDisabled = false;
+
+if (isDisabled === true) {
+    console.log(0);
+}
+else if (hours <= 1) {
+    console.log(50);
+}
+else if (hours <= 4) {
+    console.log(50 + (hours - 1) * 30);
+}
+else {
+    console.log(200);
+}
+
+
+
+
+const year = 1900;
+
+if (year % 400 === 0) {
+    console.log("Artık yıl");
+}
+else if (year % 100 === 0) {
+    console.log("Normal yıl");
+}
+else if (year % 4 === 0) {
+    console.log("Artık yıl");
+}
+else {
+    console.log("Normal yıl");
+}
+
+
+
+
+
+const player3 = "Makas";
+const player4 = "Taş";
+
+if (
+    (player3 !== "Taş" && player3 !== "Kağıt" && player3 !== "Makas") || (player4 !== "Taş" && player4 !== "Kağıt" && player4 !== "Makas")
+) {
+    console.log("Geçersiz seçim!");
+}
+else if (player3 === player4) {
+    console.log("Berabere!");
+}
+else if (
+    (player3 === "Taş" && player4 === "Makas") || (player3 === "Kağıt" && player4 === "Taş") || (player3 === "Makas" && player4 === "Kağıt")
+) {
+    console.log("1. oyuncu kazandı!");
+}
+else {
+    console.log("2. oyuncu kazandı!");
+}
